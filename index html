@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biodata & Panel Lxyara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow-corner"></div>
+
+  <!-- BIODATA -->
+  <div class="card">
+    <h1>BIODATA</h1>
+    <div class="info">
+      <p><strong>Nama Lengkap:</strong> Dizka Lutvian Ashareef</p>
+      <p><strong>Nama Panggilan:</strong> Dizka</p>
+      <p><strong>Tanggal Lahir:</strong> 28-02-2012</p>
+      <p><strong>Alamat:</strong> jln situ sipatahunan RT 05 RW 06</p>
+      <p><strong>Sosial Media:</strong> <a href="https://tiktok.com/@lxyara8" target="_blank">tiktok.com/@lxyara8</a></p>
+      <p><strong>Nomer WA:</strong> +62 882-0002-44726</p>
+      <p><strong>Kelebihanku:</strong> Bisa rename SC dan ngoding</p>
+      <p><strong>Kekuranganku:</strong> Kurang fokus dalam pembelajaran</p>
+      <p><strong>Hobi:</strong> Ngoding dan membuat website</p>
+      <p><strong>Cita-Cita:</strong> Cyber Security</p>
+      <p><strong>Eskul:</strong> -</p>
+      <p><strong>Harapan Belajar:</strong><br>Lebih menguasai teknik informatika<br>Dan lebih mengerti dalam bahasa pemrograman.</p>
+    </div>
+    <div class="logos">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+    </div>
+  </div>
+
+  <!-- LOGIN -->
+  <div class="login-container" id="loginContainer">
+    <h2>Login Akun</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Masuk</button>
+    <p style="font-size: 13px; color: #aaa;">Hanya akun yang didaftarkan admin yang bisa login.</p>
+    <p id="info"></p>
+  </div>
+
+  <!-- TOOLS PANEL -->
+  <div class="container hidden" id="mainPanel">
+    <h1>The End LXYARA</h1>
+    <div class="tool-buttons">
+      <p class="tool-teks">kalo kamu di sakitin sama seseorang kirim aja ke bawa ini, biar lu bug wa nya sampe eror 😏✌️</p>
+      <button onclick="toggleSound()">🎶 Play & Pause Sound</button>
+      <button onclick="nextSong()">⏭ Ganti Lagu</button>
+      <button onclick="changeBackground()">🎨 Ganti Background</button>
+    </div>
+    <h2 id="welcomeText">Selamat Datang!</h2>
+    <input type="text" id="targetInput" placeholder="628xxx / Link Grup">
+    <div class="tool-grid">
+      <button onclick="triggerIOSFreeze()">🔥 IOS Freeze</button>
+      <button onclick="triggerFreezeInvis()">👻 Freeze File Invis</button>
+      <button onclick="triggerTool('forclose-delete')">🗑️ Forclose Delete</button>
+      <button onclick="triggerTool('delay-invisible')">⏳ Delay Invisible</button>
+      <button onclick="triggerTool('forclose-grup')">🧪 Forclose Grup</button>
+    </div>
+    <p id="expiredInfo">Expired Akun : -</p>
+    <div class="note">Note: gunakan fitur secara bijak. Hanya akun valid yang bisa memakai tools ini.</div>
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- POPUP -->
+  <div id="resultPopup">
+    <h2 style="text-align: center;">Attacking To Target</h2>
+    <p>📶 <b>Status</b> : <span id="popupStatus">Sukses</span></p>
+    <p>🎯 <b>Target</b> : <span id="popupTarget">-</span></p>
+    <p>📅 <b>Tanggal</b> : <span id="popupDate">-</span></p>
+    <p>📬 <b>Pengirim</b> : <span id="popupSender">-</span></p>
+    <p>📊 <b>Limit</b> : <span id="popupLimit">3/15</span></p>
+    <button onclick="closePopup()">Kembali Ke Type Bug</button>
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
